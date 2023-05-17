@@ -31,11 +31,12 @@ print("#")
 # Ask 5 integers from user and print their average on the screen as shown in the following example:
 
 # input
-a = 1
-b = 2
-c = 3
-d = 4
-e = 5
+# a = 1
+# b = 2
+# c = 3
+# d = 4
+# e = 5
 
 # Output
-The average of 1, 2, 3, 4 & 5 is: 3.0
+# The average of 1, 2, 3, 4 & 5 is: 3.0
+
