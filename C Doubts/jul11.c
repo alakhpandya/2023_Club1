@@ -11,7 +11,7 @@ int main(){
         i++;
     }
     */
-
+    
     for(i = 0; i < n; i++){
         printf("%d. Hello\n", i+1);
     }
