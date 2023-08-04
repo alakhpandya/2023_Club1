@@ -30,6 +30,7 @@ int main()
 *****
 *****
 */
+/*
 int main()
 {
     int i, j, n;
@@ -42,4 +43,134 @@ int main()
         printf("\n");
     }
     return 0;
+}
+*/
+
+// Pattern 3:
+/*
+*
+**
+***
+****
+*****
+*/
+/*
+int main()
+{
+    int i, j, n;
+    printf("n : ");
+    scanf("%d", &n);
+    for(j = 1; j <= n; j++){
+        for(i = 1; i <= j; i++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+*/
+
+// Pattern 3:
+/*
+    *
+   **
+  ***
+ ****
+*****
+*/
+/*
+int main()
+{
+    int i, j, n, k;
+    printf("n : ");
+    scanf("%d", &n);
+    // k = n-1;
+    for(j = 1; j <= n; j++){
+        for(i = 1; i <= n-j; i++){  // n - j
+            printf(" ");
+        }
+        for(i = 1; i <= j; i++){
+            printf("*");
+        }
+        printf("\n");
+        // k--;
+    }
+    return 0;
+}
+*/
+
+// Pattern 4:
+/*
+*****
+****
+***
+**
+*
+
+int main()
+{
+    int i, j, n, k;
+    printf("n : ");
+    scanf("%d", &n);
+    // k = n-1;
+    for(j = 1; j <= n; j++){
+        for(i = 1; i <= n-j+1; i++){  // n - j
+            printf("*");
+        }
+        printf("\n");
+        // k--;
+    }
+    return 0;
+}
+
+// Pattern 4:
+
+*****
+ ****
+  ***
+   **
+    *
+*/
+/*
+int main(){
+    int i, j, n, k;
+    printf("n : ");
+    scanf("%d", &n);
+    // k = n-1;
+    for(j = 1; j <= n; j++){
+        for(i = 1; i <= j - 1; i++){
+            printf(" ");
+        }
+        for(i = 1; i <= n- j + 1; i++){  // n - j
+            printf("*");
+        }
+        printf("\n");
+        // k--;
+    }
+    return 0;
+}
+*/
+
+// Pattern 4:
+
+/*
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+*/
+int main(){
+    int i, j, n;
+    printf("n: ");
+    scanf("%d", &n);
+    for(j = 1; j <= n; j++){
+        for(i = 1; i <= n - j; i++){
+            printf(" ");
+        }
+        for(i = 1; i <= j; i++){
+            printf("* ");
+        }
+        printf("\n");
+    }
 }
