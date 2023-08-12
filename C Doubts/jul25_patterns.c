@@ -159,7 +159,8 @@ int main(){
    * * *
   * * * *
  * * * * *
-*/
+
+
 int main(){
     int i, j, n;
     printf("n: ");
@@ -174,3 +175,125 @@ int main(){
         printf("\n");
     }
 }
+*/
+
+// Pattern 5: n = 10 or 11
+
+/*
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     * 
+
+n = 9 or 8
+     *
+    * *
+   * * *
+  * * * *
+  * * * *
+   * * *
+    * *
+     * 
+*/
+/*
+int main(){
+    int i, j, n, rows;
+    printf("n: ");  //  10
+    scanf("%d", &n);
+    rows = n/2;     // 5
+    for(i = 0; i < rows; i++){
+        for(j = 0; j < rows-i; j++){   // 5, 4, 3, 2, 1
+            printf(" ");
+        }
+        for(j = 0; j <= i; j++){     // 1, 2, 3, 4, 5
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for(i = 0; i < rows; i++){ 
+        for(j = 0; j <= i; j++){    // 1, 2, 3, 4, 5
+            printf(" ");
+        }
+        for(j = 0; j < rows-i; j++){ // 5, 4, 3, 2, 1
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+*/
+
+// Pattern 6:
+
+/*
+n = 10:
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     * 
+
+n = 9:
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     * 
+*/
+
+int main(){
+    int i, j, n, rows;
+    printf("n: ");  //  10
+    scanf("%d", &n);
+    rows = n / 2;
+    for(i = 0; i < rows; i++){
+        for(j = 0; j < rows-i; j++){
+            printf(" ");
+        }
+        for(j = 0; j <= i; j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    if (n % 2 == 0){
+        for(i = 0; i < rows; i++){
+            for(j = 0; j <= i; j++){
+                printf(" ");
+            }
+            for(j = 0; j < rows-i; j++){
+                printf("* ");
+            }
+            printf("\n");
+        }
+    }
+    else{
+        rows += 1;
+        for(i = 0; i < rows; i++){
+            for(j = 0; j < i; j++){
+                printf(" ");
+            }
+            for(j = 0; j < rows-i; j++){
+                printf("* ");
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
+
