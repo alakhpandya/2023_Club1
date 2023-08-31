@@ -23,7 +23,7 @@ int main()
 
     for(i = 0; i < 5; i++){
         printf("Emp-%d: ", i);
-        scanf("%d", &e[i]);
+        scanf("%d", &e[i]);     // e0, e1, e2, e3, e4
     }
     printf("Employee no: ");
     scanf("%d", &choice);   // 0, 3
